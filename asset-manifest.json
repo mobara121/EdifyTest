@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/EdifyTest/static/css/main.73efbf52.chunk.css",
+    "main.js": "/EdifyTest/static/js/main.d685c215.chunk.js",
+    "main.js.map": "/EdifyTest/static/js/main.d685c215.chunk.js.map",
+    "runtime-main.js": "/EdifyTest/static/js/runtime-main.d06af6a1.js",
+    "runtime-main.js.map": "/EdifyTest/static/js/runtime-main.d06af6a1.js.map",
+    "static/js/2.05677de2.chunk.js": "/EdifyTest/static/js/2.05677de2.chunk.js",
+    "static/js/2.05677de2.chunk.js.map": "/EdifyTest/static/js/2.05677de2.chunk.js.map",
+    "static/js/3.5155a579.chunk.js": "/EdifyTest/static/js/3.5155a579.chunk.js",
+    "static/js/3.5155a579.chunk.js.map": "/EdifyTest/static/js/3.5155a579.chunk.js.map",
+    "index.html": "/EdifyTest/index.html",
+    "static/css/main.73efbf52.chunk.css.map": "/EdifyTest/static/css/main.73efbf52.chunk.css.map",
+    "static/js/2.05677de2.chunk.js.LICENSE.txt": "/EdifyTest/static/js/2.05677de2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d06af6a1.js",
+    "static/js/2.05677de2.chunk.js",
+    "static/css/main.73efbf52.chunk.css",
+    "static/js/main.d685c215.chunk.js"
+  ]
+}
