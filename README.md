@@ -5,7 +5,7 @@ One of the best solutions for busy people to eat better at home is to plan and p
 
 ## Open APP
 
-[TODAY'S MENU](https://github.com/mobara121/EdifyTest.git)
+[TODAY'S MENU](https://mobara121.github.io/EdifyTest/)
 
 ### `npm start`
 
