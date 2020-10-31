@@ -9,15 +9,29 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
+      container:{
+        
+      },
     listItem: {
-        padding: theme.spacing(4),
-        margin: '20px',
-        borderRadius: '5px',
-        boxShadow: "15px 5px 25px 0px rgba(0, 0, 0, 0.69)",
+        maxWidth: '75%',
+        backgroundColor: '#fbfbfb',
+        padding: theme.spacing(3),
+        margin: '20px auto',
+        // borderRadius: '5px',
+        boxShadow: "15px 5px 25px 5px rgba(0, 0, 0, 0.918), 0 0 40px rgba(0, 0, 0, 0.3) inset",
+    },
+    openItem:{
+        display: 'flex',
     },
     pic1: {
         width: '10%',
+        marginLeft: '10px',
+        marginTop: '10px',
         minWidth: 100,
+    },
+    label:{
+        margin: '10px auto',
+        padding: '5px'
     },
     nested: {
         display: 'flex',
@@ -30,21 +44,22 @@ const useStyles = makeStyles((theme) =>
   }),
 );
 
-function Menus({label, calory, pic, totalTime, ingredients}){
+function Menus({label, calorie, pic, totalTime, ingredients}){
     const classes = useStyles();
     const [open, setOpen] = useState(true);
     const handleClick = () => {
         setOpen(!open);
       };
       
-    var roundCalory = Math.round(calory); 
+    var roundCalory = Math.round(calorie); 
     
     return(
-        <div>
+        <div className={classes.container}>
             <List className={classes.listItem}>
-                <img className={classes.pic1} src={pic} alt="" />
-                <h2>{label}</h2>                            
-                                   
+                <div className={classes.openItem}>
+                    <img className={classes.pic1} src={pic} alt="" />
+                    <h2 className={classes.label}>{label}</h2>                            
+                </div>                   
                     <ListItem className={classes.details} onClick={handleClick}>
                         <ListItemText primary="Details" />
                         {open ? <ExpandMore /> : <ExpandLess />}

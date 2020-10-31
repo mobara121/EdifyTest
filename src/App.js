@@ -7,10 +7,11 @@ import ToggleButton from '@material-ui/lab/ToggleButton';
 
 const useStyles = makeStyles(() =>
   createStyles({  
-    '@global': {
-      '.MuiToggleButton-root.Mui-selected, .MuiToggleButton-root.Mui-selected:hover': {
-        backgroundColor: 'red',
-      }}, 
+     
+    title:{
+      fontSize: '40px',
+      color: '#fff',
+    },
     form: {
         margin: '10px auto',        
     },
@@ -28,11 +29,20 @@ const useStyles = makeStyles(() =>
       padding: '10px'
     },
     togglebtn: {
+      
       width: '5px',
       height: '5px', 
       textAlign: 'left',
       marginRight: '10px'
     },
+    '@global': {
+      '.MuiToggleButton-root:hover':{
+        backgroundColor: '#fff',
+      },
+      '.MuiToggleButton-root.Mui-selected, .MuiToggleButton-root.Mui-selected:hover': {
+        backgroundColor: 'pink',
+        color: 'red'
+      }},
   }),
 );
 
@@ -76,9 +86,8 @@ function App() {
   };
 
   return (
-    <div className="App">
-      
-      <h1>TODAY'S MENU</h1>
+    <div className="App">      
+      <h1 className={classes.title}>TODAY'S MENU</h1>
       <form onSubmit={getFilter} className={classes.form}>
         <input className={classes.input} type="text" value={filter} onChange={updateFilter}/>
         <button className={classes.btn} type="submit">Filter</button>              
