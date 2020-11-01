@@ -1,5 +1,6 @@
 body {
   background-image: url("./asset/marble.jpg");
+  background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Archer", "Times New Roman",
     "Serif", "Netraface", "Arial", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
@@ -7,7 +8,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -9,15 +9,11 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
-      container:{
-        
-      },
     listItem: {
         maxWidth: '75%',
         backgroundColor: '#fbfbfb',
         padding: theme.spacing(3),
         margin: '20px auto',
-        // borderRadius: '5px',
         boxShadow: "15px 5px 25px 5px rgba(0, 0, 0, 0.918), 0 0 40px rgba(0, 0, 0, 0.3) inset",
     },
     openItem:{
@@ -28,10 +24,11 @@ const useStyles = makeStyles((theme) =>
         marginLeft: '10px',
         marginTop: '10px',
         minWidth: 100,
+        maxHeight: 100
     },
     label:{
-        margin: '10px auto',
-        padding: '5px'
+        margin: '0 auto',
+        padding: '20px 10px',
     },
     nested: {
         display: 'flex',
@@ -43,8 +40,9 @@ const useStyles = makeStyles((theme) =>
     }
   }),
 );
-
+  
 function Menus({label, calorie, pic, totalTime, ingredients}){
+    var key = 1;    
     const classes = useStyles();
     const [open, setOpen] = useState(true);
     const handleClick = () => {
@@ -70,17 +68,15 @@ function Menus({label, calorie, pic, totalTime, ingredients}){
                                 <p>Calories: {roundCalory} cal.</p>
                                 <p>Cooking Time: {totalTime} min.</p>
                                 <p>Ingredients:</p>
-                                <ol>{ingredients.map(ingredient => (
-                                    <li>{ingredient.text}</li>
+                                <ol>{ingredients.map((ingredient) => (
+                                    <li key={key++}>{ingredient.text}</li>
                                 ))}
                                 </ol>
                             </ListItem>
                         </List>
                     </Collapse>
             </List>
-
         </div>
-
     );
 }
 
