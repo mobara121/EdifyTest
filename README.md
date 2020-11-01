@@ -1,26 +1,36 @@
+
 # TODAY'S MENU
 
 **Version 1.00**
-One of the best solutions for busy people to eat better at home is to plan and prep ahead. You even don't have a time for grocery shopping? Don't worry. This 'TODAY'S MENU' app can help you to search menus with using the item you have in your fridge or pantry!
+One of the best solutions for busy people to eat better at home is to plan and prep ahead. Even if you don't have time for grocery shopping, don't worry. This 'TODAY'S MENU' app can help you find ideas for items you already have in your fridge or pantry!
+![Atom](/docs/images/todaysmenu.png)
 
-## Open APP
+## HOW TO USE APP
 
-[TODAY'S MENU](https://mobara121.github.io/EdifyTest/)
+1. Visit the app here: [TODAY'S MENU](https://mobara121.github.io/EdifyTest/) 
+2. Then, enter any food item you have in the kitchen and select **Search**.  The page with refresh with a list of recipe ideas for your next meal.
 
-### `npm start`
+If you would like to think about your menu for a couple seconds, you can always toggle the FETCH DELAY button  ![Delay Button](docs/images/delaybutton.png)   Red = **ON**
 
-Runs the app in the development mode.\
+## LOCAL DEVELOPMENT - Getting Started
+
+### Prerequisites
+- [Git](https://git-scm.com)
+- [NPM](https://www.npmjs.com/)
+
+### From your project directory, run the following cmd lines:
+
+`git clone https://github.com/mobara121/EdifyTest.git`
+`cd EdifyTest`
+`git install`
+`npm start`
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The page will reload if you make edits.
 
-### `npm test`
 
-Launches the jest test runner in the interactive watch mode.\
-See the section about [running tests](https://reactjs.org/docs/testing.html) for more information.
-
-## Learn More
+## Learn More About React Apps
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
